@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="notranstale" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/remixicon.css">
+   
+    <!-- title situs -->
+    <title>Web Archive Indonesian</title>
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header_logo-icon">
+            <i class="ri-signal-tower-fill nav_menu-icon"></i>
+    
+            <div class="header_logo-desc">
+                <h2>Web <span>Archive</span></h2>
+                <p>Article in Indonesian</p>
+            </div>
+        </div>
+    
+        <div class="header_search" id="header_search">
+            <input class="header_search-input" id="header_search-input" type="text" placeholder="Enter Keyword ..." onfocus="this.value=''">
+            <button class="header_search-botton" id="header_search-botton" onclick="searchInput()">
+                <i class="ri-search-2-line"></i>
+            </button>
+
+            <div class="header_search-list" id="header_search-list"></div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main class="main" id="main">
+        <div class="main_title" id="main_title"></div>
+        <div class="main_desc" id="main_desc"></div>
+        <div class="main_content" id="main_content">Silakan Tikkan <span>home</span> atau <span>1</span> untuk memulai.</div>
+        
+        <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://vonfalleg-github-io.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </main>
+
+    <!-- scroll to top -->
+    <div class="go_to-top" id="go_to-top">
+        <button id="go_to-top-button" onclick="topButton()">
+            <i class="ri-arrow-up-line"></i>
+        </button>
+    </div>
+
+    <!-- javascript -->
+    <script src="/javascript/main/main.js"></script>
+    <script src="/javascript/main/searchList.js"></script>
+    <script src="/javascript/main/searchLink.js"></script>
+    <script src="/javascript/main/searchFunction.js"></script>
+    
+    <!-- laman main situs -->
+    <script src="/javascript/laman/home.js"></script>
+    <script src="/javascript/laman/explore.js"></script>
+    <script src="/javascript/laman/about.js"></script>
+    <script src="/javascript/laman/support.js"></script>
+    <script src="/javascript/laman/contact.js"></script> 
+
+    <!-- sendmail / email -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("qh8NF8L6mx04-7RVq");
+        })();
+    </script>
+
+    <!-- dokumen / artikel -->
+    <script src="/javascript/artikel/ubuntu.js"></script>    
+    <script src="/javascript/artikel/programming_c++.js"></script>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
